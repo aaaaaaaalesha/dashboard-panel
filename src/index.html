@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+<div id="main">
+    <div id="cards">
+        <h1>Мои карты</h1>
+        <h2>Посмотреть все</h2>
+        <div class="card block purple">
+            <div class="balance">
+                <span class="balance-key">Баланс</span>
+                <span class="balance-value">5756₽</span>
+            </div>
+            <div class="chip">
+                <img src="img/chip.svg" alt="chip-icon">
+            </div>
+            <div class="card-text">
+                <div class="card-unit">
+                    <span class="card-key">CARD HOLDER</span>
+                    <span class="card-value">Eddy Cusuma</span>
+                </div>
+                <div class="card-unit">
+                    <span class="card-key">VALID THRU</span>
+                    <span class="card-value">12/22</span>
+                </div>
+            </div>
+            <div class="card-number">3778 **** **** 3456</div>
+        </div>
+        <div class="card block">
+            <div class="balance">
+                <span class="balance-key">Баланс</span>
+                <span>5756₽</span>
+            </div>
+            <div class="chip">
+                <img src="img/chip-black.svg" alt="chip-icon">
+            </div>
+            <div class="card-text">
+                <div class="card-unit">
+                    <span class="card-key">CARD HOLDER</span>
+                    <span class="card-value">Eddy Cusuma</span>
+                </div>
+                <div class="card-unit">
+                    <span class="card-key">VALID THRU</span>
+                    <span class="card-value">12/22</span>
+                </div>
+            </div>
+            <div class="card-number">
+                3778 **** **** 3456
+            </div>
+        </div>
+    </div>
+
+    <div id="operations">
+        <h1>Недавние операции</h1>
+        <div id="recent-operations" class="block">
+            <div class="operation">
+                <div class="operation-info">
+                    <div class="icon deposit">
+                        <img src="img/deposit-icon.svg" alt="deposit-icon">
+                    </div>
+                    <div class="operation-text">
+                        <span class="operation-type">Пополнение</span>
+                        <span class="operation-date">25 Января 2021</span>
+                    </div>
+                </div>
+                <div class="amount income">+2500₽</div>
+            </div>
+
+            <div class="operation">
+                <div class="operation-info">
+                    <div class="icon deposit">
+                        <img src="img/deposit-icon.svg" alt="deposit-icon">
+                    </div>
+                    <div class="operation-text">
+                        <span class="operation-type">Пополнение</span>
+                        <span class="operation-date">23 Января 2021</span>
+                    </div>
+                </div>
+                <div class="amount income">+5400₽</div>
+            </div>
+
+            <div class="operation">
+                <div class="operation-info">
+                    <div class="icon transfer">
+                        <img src="img/transfer-icon.svg" alt="deposit-icon">
+                    </div>
+                    <div class="operation-text">
+                        <span class="operation-type">Перевод</span>
+                        <span class="operation-date">20 Января 2021</span>
+                    </div>
+                </div>
+                <div class="amount outcome">-850₽</div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="last-activity">
+        <h1>Недавняя активность</h1>
+        <div id="weekly-activity">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="circle deposit-circle"></div>
+                    <p>Пополнения</p>
+                </div>
+                <div class="legend-item">
+                    <div class="circle withdraw-circle"></div>
+                    <p>Траты</p>
+                </div>
+            </div>
+            <div id="weekly-activity-diagram">
+                <!-- Горизонтальные полосы. -->
+                <div
+                        class="line"
+                        style="grid-area: y-axis-1 / bar-1 / y-axis-1 / bar-7"
+                ></div>
+                <div
+                        class="line"
+                        style="grid-area: y-axis-2 / bar-1 / y-axis-2 / bar-7"
+                ></div>
+                <div
+                        class="line"
+                        style="grid-area: y-axis-3 / bar-1 / y-axis-3 / bar-7"
+                ></div>
+                <div
+                        class="line"
+                        style="grid-area: y-axis-4 / bar-1 / y-axis-4 / bar-7"
+                ></div>
+                <div
+                        class="line"
+                        style="grid-area: y-axis-5 / bar-1 / y-axis-5 / bar-7"
+                ></div>
+                <div
+                        class="line"
+                        style="grid-area: y-axis-6 / bar-1 / y-axis-6 / bar-7"
+                ></div>
+
+                <!-- Подписи на оси ординат. -->
+                <span class="y-axis" style="grid-area: y-axis-1">500</span>
+                <span class="y-axis" style="grid-area: y-axis-2">400</span>
+                <span class="y-axis" style="grid-area: y-axis-3">300</span>
+                <span class="y-axis" style="grid-area: y-axis-4">200</span>
+                <span class="y-axis" style="grid-area: y-axis-5">100</span>
+                <span class="y-axis" style="grid-area: y-axis-6">0</span>
+
+                <!-- Подписи по оси абсцисс. -->
+                <span class="day" style="grid-area: day-1">Пн</span>
+                <span class="day" style="grid-area: day-2">Вт</span>
+                <span class="day" style="grid-area: day-3">Ср</span>
+                <span class="day" style="grid-area: day-4">Чт</span>
+                <span class="day" style="grid-area: day-5">Пт</span>
+                <span class="day" style="grid-area: day-6">Сб</span>
+                <span class="day" style="grid-area: day-7">Вс</span>
+
+                <!-- Сами столбцы диаграммы по дням (высота их захардкожена в стилях). -->
+                <div class="bar-wrapper" style="grid-area: bar-1">
+                    <div class="bar">
+                        <div class="bar-red"></div>
+                        <div class="bar-green"></div>
+                    </div>
+                </div>
+                <div class="bar-wrapper" style="grid-area: bar-2">
+                    <div class="bar">
+                        <div class="bar-red"></div>
+                        <div class="bar-green"></div>
+                    </div>
+                </div>
+                <div class="bar-wrapper" style="grid-area: bar-3">
+                    <div class="bar">
+                        <div class="bar-red"></div>
+                        <div class="bar-green"></div>
+                    </div>
+                </div>
+                <div class="bar-wrapper" style="grid-area: bar-4">
+                    <div class="bar">
+                        <div class="bar-red"></div>
+                        <div class="bar-green"></div>
+                    </div>
+                </div>
+                <div class="bar-wrapper" style="grid-area: bar-5">
+                    <div class="bar">
+                        <div class="bar-red"></div>
+                        <div class="bar-green"></div>
+                    </div>
+                </div>
+                <div class="bar-wrapper" style="grid-area: bar-6">
+                    <div class="bar">
+                        <div class="bar-red"></div>
+                        <div class="bar-green"></div>
+                    </div>
+                </div>
+                <div class="bar-wrapper" style="grid-area: bar-7">
+                    <div class="bar">
+                        <div class="bar-red"></div>
+                        <div class="bar-green"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="costs">
+        <h1>Статистика расходов</h1>
+        <div id="cost-diagram">
+            <!-- Подписи по оси абсцисс. -->
+            <span class="month" style="grid-area: month-1">Авг</span>
+            <span class="month" style="grid-area: month-2">Сен</span>
+            <span class="month" style="grid-area: month-3">Окт</span>
+            <span class="month" style="grid-area: month-4">Ноя</span>
+            <span class="month" style="grid-area: month-5">Дек</span>
+            <span class="month" style="grid-area: month-6">Янв</span>
+
+            <!-- Подписи по оси абсцисс. -->
+            <!-- Сами столбцы диаграммы по дням (высота их захардкожена в стилях). -->
+            <div class="bar-wrapper" style="grid-area: bar-1">
+                <div class="bar">
+                    <div class="bar-grey"></div>
+                </div>
+            </div>
+            <div class="bar-wrapper" style="grid-area: bar-2">
+                <div class="bar">
+                    <div class="bar-grey"></div>
+                </div>
+            </div>
+            <div class="bar-wrapper" style="grid-area: bar-3">
+                <div class="bar">
+                    <div class="bar-grey"></div>
+                </div>
+            </div>
+            <div class="bar-wrapper" style="grid-area: bar-4">
+                <div class="bar">
+                    <div class="bar-grey"></div>
+                </div>
+            </div>
+            <div class="bar-wrapper" style="grid-area: bar-5">
+                <div class="bar">
+                    <div class="bar-green"></div>
+                </div>
+            </div>
+            <div class="bar-wrapper" style="grid-area: bar-6">
+                <div class="bar">
+                    <div class="bar-grey"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

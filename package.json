@@ -1,0 +1,16 @@
+{
+  "name": "2-flex-grid",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "npx playwright test --project=chromium",
+    "test:ui": "npx playwright test --ui --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.4"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div id="last-activity">
+        <h1>Недавняя активность</h1>
+
+        <div id="weekly-activity">
+          <div class="legend">
+            <div class="legend-item">
+              <div class="circle deposit-circle"></div>
+              <p>Пополнения</p>
+            </div>
+            <div class="legend-item">
+              <div class="circle withdraw-circle"></div>
+              <p>Траты</p>
+            </div>
+          </div>
+          <div id="weekly-activity-diagram">
+            <div
+              class="line"
+              style="grid-area: y-axis-5 / bar-1 / y-axis-5 / bar-7"
+            ></div>
+            <div
+              class="line"
+              style="grid-area: y-axis-6 / bar-1 / y-axis-6 / bar-7"
+            ></div>
+
+            <span class="y-axis" style="grid-area: y-axis-5">100</span>
+            <span class="y-axis" style="grid-area: y-axis-6">0</span>
+
+            <span class="day" style="grid-area: day-1">Пн</span>
+            <span class="day" style="grid-area: day-2">Вт</span>
+
+            <div class="bar-wrapper" style="grid-area: bar-1">
+              <div class="bar">
+                <div class="bar-red"></div>
+                <div class="bar-green"></div>
+              </div>
+            </div>
+
+            <div class="bar-wrapper" style="grid-area: bar-2">
+              <div class="bar">
+                <div class="bar-red"></div>
+                <div class="bar-green"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
